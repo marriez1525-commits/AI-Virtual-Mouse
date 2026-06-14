@@ -26,9 +26,3 @@ MediaPipe - High-fidelity, low-latency hand skeleton and landmark tracking
 
 PyAutoGUI - Programmatic mouse control and OS-level event triggering
 
-
-hellooo zaibb
-hi marrie
-I luvv u
-luv u more babe❤️
-I want nunu
