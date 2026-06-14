@@ -1,4 +1,5 @@
 🌟 AI Virtual Mouse
+
 A sleek, gesture-controlled digital interface that translates real-time hand movements into precise mouse actions. By leveraging computer vision and machine learning, this application eliminates the need for physical hardware, offering a futuristic, touchless navigation experience.
 
 ✨ Features
