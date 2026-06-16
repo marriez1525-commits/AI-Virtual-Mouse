@@ -140,7 +140,7 @@ while True:
         cv2.putText(frame, "Volume Mode", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
         scroll_start_y = None
         zoom_start_dist = None
-        
+     
     else:
         scroll_start_y = None
         zoom_start_dist = None
