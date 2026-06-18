@@ -1,6 +1,4 @@
 import numpy as np
-
-
 class Utils:
 
     def __init__(self):

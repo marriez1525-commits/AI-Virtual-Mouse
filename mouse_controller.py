@@ -2,7 +2,6 @@ import pyautogui
 
 pyautogui.FAILSAFE = False
 
-
 class MouseController:
 
     def __init__(self):
