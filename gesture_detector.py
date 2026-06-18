@@ -34,4 +34,5 @@ class GestureDetector:
         x1, y1 = lmList[p1][1], lmList[p1][2]
         x2, y2 = lmList[p2][1], lmList[p2][2]
         distance = math.hypot(x2 - x1, y2 - y1)
+        
         return distance < threshold
