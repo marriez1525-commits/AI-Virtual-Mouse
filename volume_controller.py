@@ -13,6 +13,7 @@ class VolumeController:
             CLSCTX_ALL,
             None
         )
+
         self.volume = cast(interface, POINTER(IAudioEndpointVolume))
 
     def set_volume(self, level):
@@ -26,6 +27,7 @@ class VolumeController:
     def increase_volume(self, step=0.05):
         current = self.volume.GetMasterVolumeLevelScalar()
         self.set_volume(current + step)
+
 
     def decrease_volume(self, step=0.05):
         current = self.volume.GetMasterVolumeLevelScalar()
