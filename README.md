@@ -1,28 +1,140 @@
-🌟 AI Virtual Mouse
+# 🖱️ AI Virtual Mouse
 
-A sleek, gesture-controlled digital interface that translates real-time hand movements into precise mouse actions. By leveraging computer vision and machine learning, this application eliminates the need for physical hardware, offering a futuristic, touchless navigation experience.
+Control your computer using **hand gestures** captured through a webcam. This project uses **MediaPipe Hand Tracking** and **OpenCV** to replace traditional mouse interactions with real-time hand gestures.
 
-✨ Features
-Touchless Navigation: Move the cursor effortlessly by moving your hand in front of the camera.
+---
 
-Intuitive Gestures:
+## 🚀 Features
 
-☝️ Cursor Movement: Raise the index finger to navigate.
+- 🖐️ Real-time hand tracking
+- 🖱️ Move mouse cursor using index finger
+- 👆 Left click gesture
+- 👉 Right click gesture
+- 🔄 Scroll using hand gesture
+- 🔊 Volume control support (extendable)
+- ⚡ Smooth and real-time performance
+- 📷 Webcam-based interaction
+- 🎯 Accurate finger landmark detection
 
-✌️ Left Click: Bring the index and middle fingers close together.
+---
 
-✊ Drag & Drop: Hold specific hand closures to grip and move windows or items.
+## 🛠️ Technologies Used
 
-Smooth Tracking: Integrated dampening algorithms to prevent cursor jitter and ensure fluid motion.
+- Python 3.10
+- OpenCV
+- MediaPipe
+- NumPy
+- PyAutoGUI
 
-Performance Optimized: Lightweight execution designed to run efficiently on standard webcams without heavy CPU overhead.
+---
 
-🛠️ Built With
-Python - Core application logic
+## 📂 Project Structure
 
-OpenCV - Real-time video processing and camera feed management
+```
+AI-Virtual-Mouse/
+│
+├── main.py                  # Main application
+├── hand_tracking.py         # Hand detection & landmark extraction
+├── gesture_detector.py      # Gesture recognition logic
+├── volume_controller.py     # Volume control (optional)
+├── requirements.txt
+└── README.md
+```
 
-MediaPipe - High-fidelity, low-latency hand skeleton and landmark tracking
+---
 
-PyAutoGUI - Programmatic mouse control and OS-level event triggering
+## ✋ Supported Gestures
 
+| Gesture | Action |
+|----------|--------|
+| Index Finger Up | Move Cursor |
+| Thumb + Index Pinch | Left Click |
+| Index + Middle Finger Pinch | Right Click |
+| Two Fingers Up | Scroll |
+| Volume Gesture | Control System Volume |
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/AI-Virtual-Mouse.git
+```
+
+Move into the project directory
+
+```bash
+cd AI-Virtual-Mouse
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the project
+
+```bash
+python main.py
+```
+
+---
+
+## 📦 Requirements
+
+```
+opencv-python
+mediapipe==0.10.9
+numpy
+pyautogui
+```
+
+or
+
+```bash
+pip install opencv-python mediapipe==0.10.9 numpy pyautogui
+```
+
+---
+
+## 💡 How It Works
+
+1. Webcam captures live video.
+2. MediaPipe detects hand landmarks.
+3. Finger positions are extracted.
+4. Gestures are recognized.
+5. Corresponding mouse actions are executed using PyAutoGUI.
+
+---
+
+## 📈 Future Improvements
+
+- 🎙️ Voice commands
+- 🤚 Multi-hand support
+- 🎚️ Brightness control
+- 📂 Drag and Drop gesture
+- 📸 Screenshot gesture
+- 🔒 Custom gesture mapping
+- 🎮 Gaming mode
+- 🧠 AI-based gesture customization
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ If you like this project
+
+Give this repository a ⭐ on GitHub!
