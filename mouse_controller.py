@@ -6,8 +6,7 @@ class MouseController:
 
     def __init__(self):
         self.screen_w, self.screen_h = pyautogui.size()
-
-
+        
     def move_cursor(self, x, y):
         """Move mouse cursor"""
         pyautogui.moveTo(x, y)

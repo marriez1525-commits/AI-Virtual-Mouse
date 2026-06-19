@@ -7,7 +7,6 @@ from gesture_detector import GestureDetector
 # Stop PyAutoGUI from crashing if mouse hits screen boundaries
 pyautogui.FAILSAFE = False
 
-# Initialize Camera and Objects
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
@@ -25,6 +24,7 @@ scroll_speed = 40       # 💡 Change this number to make scrolling faster or sl
 frame_margin_x = 110  
 margin_top = 60       
 margin_bottom = 120   
+
 
 # Calculate the center line of the box for the joystick logic
 box_center_y = margin_top + (480 - margin_bottom - margin_top) // 2
