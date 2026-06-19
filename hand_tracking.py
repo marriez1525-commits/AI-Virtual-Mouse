@@ -62,6 +62,8 @@ class HandTracker:
             else:
                 fingers.append(0)
 
+
+
         # Other 4 fingers
         for id in range(1, 5):
             if lmList[self.tipIds[id]][2] < lmList[self.tipIds[id] - 2][2]:
