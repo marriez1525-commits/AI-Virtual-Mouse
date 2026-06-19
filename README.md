@@ -43,6 +43,16 @@ Control your computer using **hand gestures** captured through a webcam. This pr
 5. Corresponding mouse actions are executed using PyAutoGUI.
 
 ---
+## 📈 Future Improvements
+
+- 🎙️ Voice commands
+- 🤚 Multi-hand support
+- 🎚️ Brightness control
+- 📂 Drag and Drop gesture
+- 📸 Screenshot gesture
+- 🔒 Custom gesture mapping
+- 🎮 Gaming mode
+- 🧠 AI-based gesture customization
 
 
 
