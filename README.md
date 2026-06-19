@@ -15,6 +15,21 @@ Control your computer using **hand gestures** captured through a webcam. This pr
 - 🎯 Accurate finger landmark detection
 
 ## 🛠️ Technologies Used
+# 🖱️ AI Virtual Mouse
+
+Control your computer using **hand gestures** captured through a webcam. This project uses **MediaPipe Hand Tracking** and **OpenCV** to replace traditional mouse interactions with real-time hand gestures.
+
+## 🚀 Features
+
+- 🖐️ Real-time hand tracking
+- 🖱️ Move mouse cursor using index finger
+- 👆 Left click gesture
+- 👉 Right click gesture
+- 🔄 Scroll using hand gesture
+- 🔊 Volume control support (extendable)
+- ⚡ Smooth and real-time performance
+- 📷 Webcam-based interaction
+- 🎯 Accurate finger landmark detection
 
 - Python 3.10
 - OpenCV
