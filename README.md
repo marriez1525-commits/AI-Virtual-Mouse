@@ -17,12 +17,4 @@ Smooth Tracking: Integrated dampening algorithms to prevent cursor jitter and en
 
 Performance Optimized: Lightweight execution designed to run efficiently on standard webcams without heavy CPU overhead.
 
-🛠️ Built With
-Python - Core application logic
-
-OpenCV - Real-time video processing and camera feed management
-
-MediaPipe - High-fidelity, low-latency hand skeleton and landmark tracking
-
-PyAutoGUI - Programmatic mouse control and OS-level event triggering
 
