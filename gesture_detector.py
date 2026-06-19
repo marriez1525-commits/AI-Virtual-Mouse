@@ -3,7 +3,6 @@ import math
 class GestureDetector:
     def __init__(self):
         pass
-
     def detect_gesture(self, fingers, lmList):
         if len(lmList) == 0:
             return "NO_HAND"

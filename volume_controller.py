@@ -28,7 +28,6 @@ class VolumeController:
         current = self.volume.GetMasterVolumeLevelScalar()
         self.set_volume(current + step)
 
-
     def decrease_volume(self, step=0.05):
         current = self.volume.GetMasterVolumeLevelScalar()
         self.set_volume(current - step)
