@@ -1,5 +1,6 @@
 # 🖱️ AI Virtual Mouse
 
+
 Control your computer using **hand gestures** captured through a webcam. This project uses **MediaPipe Hand Tracking** and **OpenCV** to replace traditional mouse interactions with real-time hand gestures.
 
 ## 🚀 Features
