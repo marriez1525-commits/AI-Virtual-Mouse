@@ -1,40 +1,32 @@
-# 🖱️ GestureSurfer AI: Next-Gen Touchless Interface
+# ⚡ GestureSurfer AI: The Ultimate Touchless Desktop Interface
 
-Control your desktop interface seamlessly using real-time **hand gestures** captured through a standard webcam. By leveraging advanced Machine Learning pipelines and Computer Vision frameworks, this project maps human hand anatomy to digital mouse mechanics, offering a fluid, hardware-free navigation experience.
-
----
-
-### ✨ Core Capabilities
-
-* **⚡ Ultra-Low Latency Tracking:** Employs optimized processing pipelines to achieve real-time landmark detection and instantaneous screen updates.
-* **🎯 Jitter-Free Precision Cursor:** Implements an exponential moving average (EMA) smoothing algorithm to filter out natural hand tremors for smooth cursor drift.
-* **👆 Comprehensive Gesture Engine:** Maps distinct anatomical finger triggers to standard mouse operations including left-click, right-click, double-click, and persistent dragging.
-* **🔄 Smart Proportional Scrolling:** Allows dynamic page scrolling where the velocity of the scroll scales seamlessly with physical hand vertical movement.
-* **🔊 Audio & System Control Scaling:** Modulates system master volume continuously by measuring Euclidean distance vectors between key finger landmarks.
-* **🖥️ Aspect-Ratio & Screen Mapping:** Features automatic coordinate translation from bounded webcam frame dimensions to match any native monitor screen resolution.
+Transform your standard webcam into a high-precision spatial input device. Powered by cutting-edge computer vision and light machine learning pipelines, **GestureSurfer AI** eliminates physical hardware barriers by seamlessly mapping 21 anatomical hand landmarks directly into native system commands.
 
 ---
 
-### ✋ Supported Gestures & Action Mapping
+### 🔥 Cutting-Edge Capabilities
 
-| Gesture Interaction | Visual Trigger Configuration | Triggered System Action |
+* **🏎️ Sub-Millisecond Inference:** Optimized execution loop ensures fluid, near-zero-latency landmark tracking.
+* **🎯 Anti-Jitter Stabilization:** Uses an adaptive moving average filter to iron out microscopic muscle tremors for pixel-perfect selections.
+* **👑 Complete Mouse Emulation:** Go beyond basic navigation with native support for left clicks, right clicks, double clicks, and drag-and-drop toggles.
+* **🌊 Kinetic Scrolling:** Vertically scroll through codebases, documents, or websites at a velocity tied directly to your physical hand speed.
+* **🎚️ Fluid Macro Scale:** Dynamically recalibrate system audio levels by scaling the geometric space between your fingers.
+* **🖥️ Display Boundary Mapping:** Seamless, multi-monitor ready resolution scaling that maps camera pixels to any 1080p, 2K, or 4K workspace.
+
+---
+
+### ✋ The Gesture Blueprint
+
+| Mode & Interaction | Hand Landmark Configuration | System Event Matrix |
 | :--- | :--- | :--- |
-| **Index Finger Extended** ☝️ | Index MCP-PIP-DIP aligned upward; all other fingers closed | **Precision Cursor Movement** 🧭 |
-| **Thumb + Index Pinch** 🤏 | Spatial distance between Index Tip and Thumb Tip falls below threshold | **Left Mouse Click** 🖱️ |
-| **Index + Middle Pinch** ✌️ | Spatial distance between Index Tip and Middle Tip falls below threshold | **Right Mouse Click** 🔘 |
-| **Index + Middle Parallel Up** 🖐️ | Both Index and Middle fingers fully extended upward simultaneously | **Dynamic Page Scroll Mode** 🔄 |
-| **Thumb + Pinky Separation** 🤙 | Variable scaling distance between Thumb Tip and Pinky Tip | **System Volume Modulation** 🔊 |
+| **Track & Glide** ☝️ | Index extended up, all remaining fingers resting in palm | **Precision Cursor Engine** 🧭 |
+| **Action Trigger: Left** 🤏 | Index Tip + Thumb Tip absolute distance drops below threshold | **Left Mouse Click** 🖱️ |
+| **Action Trigger: Right** ✌️ | Index Tip + Middle Tip absolute distance drops below threshold | **Right Mouse Click** 🔘 |
+| **Dynamic Vector Scroll** 🖐️ | Index and Middle fingers extended parallel, moving vertically | **Variable Page Scroll** 🔄 |
+| **System Override Scale** 🤙 | Continuous expansion/contraction between Thumb and Pinky | **Master Volume Modulation** 🔊 |
 
 ---
 
-### 🛠️ Deep Tech Stack & System Architecture
+### 🧱 System Architecture Block
 
-The application decouples video acquisition, high-dimensional machine learning inference, and low-level system automation to maximize frame rates and responsiveness.
-
-* **Language Platform:** Python 3.10+
-* **Computer Vision Framework:** `OpenCV` (Video stream thread management, matrix frame conversions, and runtime rendering)
-* **Anatomical Tracking Engine:** `MediaPipe Hands` (Single-shot pipeline tracking 21 explicit 3D hand coordinates with localized skeletal topology)
-* **OS-Level Automation API:** `PyAutoGUI` (Native OS driver injection for virtualizing hardware mouse and keyboard interrupt requests)
-* **Mathematical Operations Optimization:** `NumPy` (Vectorized multidimensional array operations for geometric distance calculations and coordinate mapping)
-
-#### 📊 End-to-End System Processing Pipeline
+The engine runs a decoupled data flow design, separating raw frame transformation from high-dimensional coordinate inference.
