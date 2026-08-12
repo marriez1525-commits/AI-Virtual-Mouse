@@ -1,71 +1,71 @@
 <div align="center">
 
-# 🖱️ AI VIRTUAL MOUSE PLATFORM
-### *Next-Generation Touchless Spatial Computing Interface*
+# AI VIRTUAL MOUSE PLATFORM
+### *Enterprise Spatial Computing & Computer Vision Interface*
 
-**A high-performance, contact-free human-computer interaction framework that translates spatial hand movements into precise real-time system controls using advanced computer vision and 3D landmark tracking.**
+**A unified, software-driven human-machine interaction framework engineered to translate spatial hand kinematics into low-latency system controls via computer vision and 3D landmark regression.**
 
 ---
 
 </div>
 
-## 📌 Executive Summary
+## Executive Summary
 
-The **AI Virtual Mouse Platform** redefines human-computer interaction by replacing physical input devices with an intuitive, camera-driven gesture control framework. Operating over standard RGB video streams, the system tracks 21 distinct anatomical joints per hand in real time. By analyzing spatial landmark geometry and joint vectors, it simulates full hardware mouse functionality—including fluid cursor locomotion, sub-pixel jitter filtration, single/double clicking, right clicking, scrolling, and system media manipulation—without any physical contact.
+The **AI Virtual Mouse Platform** offers an enterprise-grade alternative to physical input peripherals by establishing a contact-free, camera-based input framework. Operating over standard RGB video streams, the system continuously monitors 21 anatomical hand joints in real time. By evaluating spatial landmark dynamics and vector geometries, it simulates operating system hardware controls—including fluid cursor locomotion, sub-pixel jitter suppression, multi-type clicks, vertical page scrolling, and system audio scaling—without dedicated hardware peripherals.
 
-Designed for touchless public kiosk navigation, sterile medical and surgical environments, accessibility engineering, and modern smart workspaces, this project delivers a secure, hygienic, and highly responsive human-machine interface.
-
----
-
-## 🛠️ Technology Ecosystem & Core Mechanics
-
-* **Real-Time Vision & Image Processing:** Ingests live webcam video feeds, performs automated frame flipping for intuitive mirror response, normalizes light exposure variations, and translates spatial coordinates onto screen coordinates.
-* **3D Hand Skeletal Regression:** Leverages deep learning models to dynamically locate, segment, and continuously track 21 three-dimensional skeletal joint coordinates across every frame.
-* **Kinematic Vector Mathematics:** Measures spatial relationships, multi-finger Euclidean joint distances, and relative angular movements to detect distinct physical gestures accurately.
-* **Low-Level Operating System Integration:** Bridges gesture recognitions directly to host system drivers, enabling smooth pointer manipulation and immediate execution of operating system actions.
+Architected for contactless public kiosks, sterile surgical displays, accessibility engineering, and modern smart workstations, this software provides a hygienic, responsive, and cross-platform human-computer interface (HCI).
 
 ---
 
-## ⚡ Key Technical Capabilities & Innovations
+## Core Technological Architecture
 
-* **Sub-Pixel Motion Smoothing:** Incorporates mathematical filtering models to smooth out natural hand micro-tremors, preventing cursor shaking and producing steady pointer locomotion.
-* **Non-Linear Workspace Boundary Mapping:** Defines an internal virtual boundary within the webcam's field of view, enabling users to comfortably reach all screen edges without extreme arm extensions.
-* **Hysteresis & False-Trigger Prevention:** Employs temporal frame validation to ensure state changes (like clicking or scrolling) require brief, deliberate positional stability, eliminating unintended input actions.
-* **Adaptive Light Normalization:** Automatically adjusts canvas contrast and color balances to ensure consistent tracking accuracy across low-light, ambient, or back-lit environments.
-
----
-
-## ✋ Supported Spatial Gestures & Operations
-
-* **Cursor Locomotion:** Extending the index finger tracks positional movement across the display with low latency.
-* **Left Click & Object Dragging:** Pinching the index finger and thumb triggers a primary click or holds an element for continuous dragging.
-* **Double Click:** Executing two consecutive pinch triggers in quick succession launches files, applications, or selects full text blocks.
-* **Right Click Context Menu:** Bringing the index finger and middle finger together opens context-sensitive system menus.
-* **Vertical Page Scrolling:** Extending both index and middle fingers vertically translates documents and web pages smoothly up or down.
-* **Dynamic Master Volume Control:** Adjusting the spatial distance between the thumb and pinky finger scales system audio linearly from zero to maximum capacity.
-* **Neutral Idle State:** Resting the hand in a closed fist or flat palm freezes cursor movement to prevent accidental interactions.
+* **Real-Time Vision Engine:** Ingests live video feeds, flips spatial canvases horizontally for intuitive mirror feedback, normalizes ambient light variations, and maps spatial coordinates to active screen dimensions.
+* **3D Hand Skeletal Regression:** Utilizes deep learning regression frameworks to detect, segment, and track 21 three-dimensional skeletal joint coordinates per frame.
+* **Kinematic Geometry & Vector Analysis:** Evaluates spatial relationships, multi-finger Euclidean joint distances, and relative angular movements to classify physical gestures accurately.
+* **System Input Automation:** Interfaces directly with host operating system input buses to execute pointer locomotion and hardware event interrupts with minimal overhead.
 
 ---
 
-## ⚙️ Processing Pipeline
+## Technical Highlights & System Capabilities
 
-1. **Video Feed Acquisition:** Captures live RGB frame matrices at high rates directly from standard integrated or external USB webcams.
-2. **Skeletal Joint Detection:** Extracts relative three-dimensional joint locations across the user's hand structure.
-3. **Spatial Geometry Analysis:** Evaluates vector lengths, angles, and inter-finger distances against calibrated gesture profiles.
-4. **Coordinate Transformation:** Translates camera frame coordinates into exact display screen pixels based on host monitor resolutions.
-5. **System Command Execution:** Transmits immediate gesture commands directly to system input drivers to simulate physical hardware mouse events.
-
----
-
-## 📈 Platform Future Expansion
-
-* **Multimodal Voice Control Integration:** Combining spatial gesture navigation with vocal commands for complex system shortcuts.
-* **Multi-Touch & Dual-Hand Workspaces:** Supporting dual-hand gestures for 3D object rotation, spatial viewport manipulation, and workspace switching.
-* **On-the-Fly Custom Gesture Calibration:** Allowing users to record personal custom hand shapes and assign them to custom application shortcuts.
-* **Gaze-Guided Target Selection:** Pairing eye-tracking for fast coarse target selection with spatial hand gestures for precise clicking action.
+* **Sub-Pixel Motion Smoothing:** Applies exponential moving average (EMA) filtration over successive frame coordinates to eliminate hand micro-tremors and optical noise, yielding smooth cursor trajectories.
+* **Non-Linear Workspace Mapping:** Establishes an internal virtual interaction boundary within the camera field of view, enabling full-screen coverage without requiring expansive physical arm movements.
+* **Hysteresis State Locking:** Integrates temporal frame buffers to validate gesture state changes, preventing false inputs caused by transient hand transitions.
+* **Adaptive Illumination Normalization:** Incorporates contrast equalization preprocessing to maintain tracking stability across low-light, ambient, or backlit environments.
 
 ---
 
-## 📄 License & Distribution
+## Gesture Control Specifications
 
-Distributed under the **MIT License**. Free for public, personal, commercial, and educational applications.
+* **Cursor Locomotion:** Extending the index finger drives primary pointer movement across the display space.
+* **Left Click & Drag:** Pinching the thumb and index finger executes a primary selection or sustains element dragging.
+* **Double Click:** Executing two consecutive pinch sequences within a designated time window triggers double-click events to launch files or applications.
+* **Right Click:** Bringing the index and middle fingers into close proximity activates context menus.
+* **Vertical Page Scroll:** Extending both the index and middle fingers vertically translates document and browser views up or down.
+* **Master Volume Control:** Adjusting the Euclidean distance between the thumb and pinky finger scales system audio linearly from minimum to maximum capacity.
+* **Neutral Idle State:** Resting the hand in a closed fist or flat palm freezes cursor movement to prevent unintended interactions.
+
+---
+
+## Processing Pipeline
+
+1. **Video Ingestion:** Captures raw RGB video frames at native rates using standard integrated or external webcams.
+2. **Skeletal Joint Tracking:** Extracts three-dimensional joint coordinates across the hand structure.
+3. **Spatial Geometry Analysis:** Measures vector lengths, angles, and inter-digit distances against defined gesture thresholds.
+4. **Coordinate Transformation:** Interpolates camera frame coordinates to exact display monitor resolutions.
+5. **System Command Dispatch:** Transmits gesture commands to operating system input drivers to simulate physical hardware mouse events.
+
+---
+
+## Future Platform Roadmap
+
+* **Multimodal Natural Language Integration:** Combining spatial gesture navigation with vocal commands for multi-step system shortcuts.
+* **Multi-Touch & Dual-Hand Workspaces:** Supporting dual-hand spatial gestures for 3D object rotation, viewport manipulation, and workspace switching.
+* **Custom Gesture Calibration Framework:** Enabling users to record personalized hand configurations and map them to custom application triggers.
+* **Gaze-Guided Target Selection:** Integrating eye-gaze direction for rapid target localization combined with hand gestures for precise selection.
+
+---
+
+## License & Distribution
+
+Distributed under the **MIT License**. Free for personal, academic, commercial, and enterprise deployment.
