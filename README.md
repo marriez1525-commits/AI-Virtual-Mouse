@@ -1,57 +1,45 @@
 # 🖱️ AI Virtual Mouse
 
-
-Control your computer using **hand gestures** captured through a webcam. This project uses **MediaPipe Hand Tracking** and **OpenCV** to replace traditional mouse interactions with real-time hand gestures.
-
-## 🚀 Features
-
-- 🖐️ Real-time hand tracking
-- 🖱️ Move mouse cursor using index finger
-- 👆 Left click gesture
-- 👉 Right click gesture
-- 🔄 Scroll using hand gesture
-- 🔊 Volume control support (extendable)
-- ⚡ Smooth and real-time performance
-- 📷 Webcam-based interaction
-- 🎯 Accurate finger landmark detection
-
-## 🛠️ Technologies Used
-- Python 3.10
-- OpenCV
-- MediaPipe
-- NumPy
-- PyAutoGUI
-
-## ✋ Supported Gestures
-
-| Gesture | Action |
-|----------|--------|
-| Index Finger Up | Move Cursor |
-| Thumb + Index Pinch | Left Click |
-| Index + Middle Finger Pinch | Right Click |
-| Two Fingers Up | Scroll |
-| Volume Gesture | Control System Volume |
-
-
-
-## 💡 How It Works
-
-1. Webcam captures live video.
-2. MediaPipe detects hand landmarks.
-3. Finger positions are extracted.
-4. Gestures are recognized.
-5. Corresponding mouse actions are executed using PyAutoGUI.
+> Real-time touchless computer control using computer vision and hand-gesture recognition.
 
 ---
-## 📈 Future Improvements
 
-- 🎙️ Voice commands
-- 🤚 Multi-hand support
-- 🎚️ Brightness control
-- 📂 Drag and Drop gesture
-- 📸 Screenshot gesture
-- 🔒 Custom gesture mapping
-- 🎮 Gaming mode
-- 🧠 AI-based gesture customization
+## 📌 Executive Summary
 
+**AI Virtual Mouse** is a computer vision application that translates human hand gestures captured via a standard webcam into real-time system interactions. Built using **MediaPipe**, **OpenCV**, and **PyAutoGUI**, it eliminates the need for physical hardware peripherals by offering precise cursor motion, multi-type clicks, scrolling, and system audio control.
 
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+* **Core Language:** Python 3.10+
+* **Computer Vision:** OpenCV (Open Source Computer Vision Library)
+* **Landmark Detection:** Google MediaPipe Hands framework
+* **System Automation:** PyAutoGUI
+* **Numerical Processing:** NumPy
+
+---
+
+## 🚀 Key Features
+
+* **Sub-Pixel Cursor Smoothing:** Exponential moving averages reduce hand jitter for fluid pointer movement.
+* **Low Latency Processing:** Optimized frame pipelines ensure real-time gesture recognition.
+* **Dynamic Coordinate Mapping:** Maps webcam frame dimensions directly to screen resolution.
+* **Multi-Gesture Action Suite:** Native support for cursor navigation, single/double clicking, right clicking, scrolling, and volume manipulation.
+* **Configurable Sensitivity:** Dynamic detection thresholds adapt to different lighting conditions and background variations.
+
+---
+
+## ✋ Gesture Control Matrix
+
+| Gesture Configuration | Trigger Condition | System Action |
+| :--- | :--- | :--- |
+| **Index Finger Extended** | Landmark 8 position mapped to screen | Move Cursor |
+| **Index + Thumb Pinch** | Distance between Landmark 4 & 8 < threshold | Left Click |
+| **Index + Middle Pinch** | Distance between Landmark 8 & 12 < threshold | Right Click |
+| **Index + Middle Extended** | Vertically aligned dual landmarks | Scroll Up / Down |
+| **Thumb & Pinky Distance** | Scaled spatial Euclidean distance | Volume Control |
+
+---
+
+## ⚙️ Architecture & Pipeline Flow
